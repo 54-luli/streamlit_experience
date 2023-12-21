@@ -10,10 +10,10 @@ langs = ("简体中文","English","Русский")
 lang_select = st.sidebar.radio("请选择语言 Please Select Your Language",langs)
 if lang_select == "简体中文":
     st.session_state.la_s = 0
-elif lang_select == "English":
-    st.session_state.la_s = 1
-elif lang_select == "Русский":
-    st.session_state.la_s = 2
+# elif lang_select == "English":
+#     st.session_state.la_s = 1
+# elif lang_select == "Русский":
+#     st.session_state.la_s = 2
 # las means language selector
 las = st.session_state.la_s
 # Page Selector
@@ -23,13 +23,13 @@ def write_header():
     r1c1,r1c2 = st.columns([9,6])
     with r1c1:
         f"# {header[las]}"
-        f"#### {author[las]} (1.1.0.20211105)"
-        st.warning(header_warning[las])
-    with r1c2:
-        if las == 0:
-            st.image("buyme.png",width=100,caption="打赏流老湿")
-        else:
-            st.image("buyme.png",width=100,caption="Buy me Coffee")
+    #     f"#### {author[las]} (1.1.0.20211105)"
+    #     st.warning(header_warning[las])
+    # with r1c2:
+    #     if las == 0:
+    #         st.image("buyme.png",width=100,caption="打赏流老湿")
+    #     else:
+    #         st.image("buyme.png",width=100,caption="Buy me Coffee")
         
 if page == p_names[las][0]:
     write_header()
