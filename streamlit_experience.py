@@ -7,8 +7,6 @@ st.session_state.la_s = 0
 langs = ("简体中文","English","Русский")
 
 # Sidebar
-# lang_select = st.sidebar.radio("请选择语言 Please Select Your Language",langs)
-lang_select == "简体中文":
 st.session_state.la_s = 0
 # lang_select = st.sidebar.radio("请选择语言 Please Select Your Language",langs)
 # if lang_select == "简体中文":
